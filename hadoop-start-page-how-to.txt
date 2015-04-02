@@ -1,0 +1,18 @@
+Step 1:
+
+go to cloudera website to get the all the ports used by hadoop and its components.
+
+url : http://www.cloudera.com/content/cloudera/en/documentation/core/latest/topics/cm_ig_ports.html
+
+Step 2 : Inspect the webpage and get the DOM contents of the table.
+
+Step 3 : beaufity the dom and paste it in sublime and find and replace.
+
+	Find 	: >(\d+)</p>
+	Replace : ><a href='http://localhost:${1}' target="_blank" >${1}</a></p>
+
+	This will make all the ports clickable and will open the screen in new window.
+
+	Not all the ports HTTP so u can remove the ones which is not.
+
+Step 4	: Save it and make it as home page.	
